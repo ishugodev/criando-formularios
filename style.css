@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #BFD7E4;
+}
+
+body, .input-wrapper input, .input-wrapper select, .input-wrapper textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, .form-title h2, fieldset legend, .submit-wrapper input {
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #293241;
+
+  color: #FFF;
+
+  padding-top: 107px;
+}
+
+header h1 {
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 400;
+}
+
+header img {
+  margin-top: 25px;
+  margin-bottom: 32px;
+}
+
+.form-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 750px;
+  height: 133px;
+
+  border-radius: 20px 20px 0 0;
+
+  background: #F67669;
+}
+
+.form-title h2 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 750px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+
+  background: #FFF;
+  border-radius: 0 0 20px 20px;
+
+  padding: 32px 64px 64px;
+  margin-bottom: 50px;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 > .input-wrapper {
+  width: 50%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-wrapper label {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+
+  transition: .1s color ease-out;
+
+  margin-left: 9px;
+}
+
+.input-wrapper label span:hover {
+  color: #767181;
+}
+
+.input-wrapper input, .input-wrapper select, .input-wrapper textarea {
+  height: 55px;
+
+  padding: 0 10px;
+
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+fieldset {
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+#fieldset-your-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+fieldset legend {
+  text-align: center;
+
+  font-size: 24px;
+  line-height: 34px;
+
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 8px;
+}
+
+.input-wrapper select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-down-fill' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%;
+}
+
+.input-wrapper textarea {
+  height: 166px;
+  padding: 10px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  z-index: 1;
+
+  width: 28px;
+  height: 28px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+
+  display: block;
+  position: relative;
+
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='limegreen' class='bi bi-check-lg' viewBox='0 0 16 16'%3E%3Cpath d='M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input, .checkbox-wrapper label {
+  cursor: pointer;
+}
+
+.col-3 {
+  display: flex;
+  align-items: center;
+}
+
+.col-3 > div {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.col-3 > div:first-child {
+  width: 50%;
+  margin-right: 33px;
+}
+
+.col-3 > div:last-child {
+  margin-right: 0;
+}
+
+.submit-wrapper {
+  margin-top: 32px;
+}
+
+.submit-wrapper input {
+  width: 100%;
+  height: 50px;
+
+  background: #F67669;
+  color: #FFF;
+
+  font-size: 20px;
+  line-height: 26px;
+
+  border: none;
+  border-radius: 8px;
+}
